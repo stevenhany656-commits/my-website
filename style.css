@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f9fb;
+    color: #00244a;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+
+    width: 100%;
+    height: 85px;
+
+    padding: 10px 40px;
+    background: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #062b52;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #65b957;
+}
+
+
+
+
+
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 10%;
+
+    background:
+        linear-gradient(135deg, #f5f9fb, #e9f5f0);
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.small-title,
+.section-title p,
+.about-card p:first-child {
+    color: #1d72a4;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #73b560;
+}
+
+.description {
+    color: #536b7d;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.main-btn,
+.second-btn {
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-btn {
+    background: #1d72a4;
+    color: white;
+}
+
+.second-btn {
+    border: 2px solid #1d72a4;
+    color: #1d72a4;
+}
+
+
+
+
+.hero-card {
+    width: 330px;
+    padding: 45px 30px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+.energy-icon {
+    font-size: 55px;
+}
+
+.hero-card h3 {
+    margin-top: 15px;
+}
+
+.energy-number {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1d72a4;
+
+    margin: 15px 0;
+}
+
+.hero-card p {
+    color: #78909c;
+}
+
+
+
+
+.section {
+    padding: 100px 10%;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.section-title span {
+    color: #607d8b;
+}
+
+
+.problem-content {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.problem-content p {
+    color: #607d8b;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.problem-box {
+    background: #00244a;
+    color: white;
+
+    padding: 45px;
+
+    border-radius: 20px;
+}
+
+.problem-box span {
+    font-size: 45px;
+}
+
+.problem-box h3 {
+    margin: 15px 0;
+}
+
+
+
+.solution {
+    background: white;
+}
+
+.steps {
+    margin-top: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.step-card {
+    width: 210px;
+    min-height: 220px;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background: #f5f9fb;
+
+    border: 1px solid #e0ebf0;
+}
+
+.step-number {
+    font-size: 14px;
+    font-weight: bold;
+    color: #73b560;
+}
+
+.step-card h3 {
+    margin: 25px 0 10px;
+}
+
+.step-card p {
+    color: #607d8b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.arrow {
+    font-size: 30px;
+    color: #73b560;
+}
+
+
+
+.dashboard {
+    padding: 100px 10%;
+    background: #00244a;
+    color: white;
+}
+
+.dashboard .section-title span {
+    color: #b8cbd8;
+}
+
+.dashboard .section-title p {
+    color: #73b560;
+}
+
+.stats {
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.stat-card {
+    background: #07375d;
+
+    padding: 30px;
+
+    border-radius: 18px;
+}
+
+.stat-icon {
+    font-size: 25px;
+}
+
+.stat-card p {
+    margin-top: 20px;
+    color: #9db5c5;
+}
+
+.stat-card h3 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.stat-card small {
+    color: #8ba6b8;
+}
+
+
+
+
+.chart-card {
+    margin-top: 25px;
+
+    padding: 35px;
+
+    background: #07375d;
+
+    border-radius: 20px;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-header p {
+    color: #73b560;
+    font-size: 12px;
+}
+
+.chart-header h3 {
+    margin-top: 8px;
+}
+
+.live {
+    color: #73b560;
+    font-weight: bold;
+}
+
+.chart {
+    height: 250px;
+
+    margin-top: 40px;
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-around;
+
+    border-bottom: 1px solid #42617a;
+}
+
+.bar {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: end;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.bar span {
+    display: block;
+
+    width: 35px;
+
+    background: #73b560;
+
+    border-radius: 7px 7px 0 0;
+
+    transition: 0.3s;
+}
+
+.bar span:hover {
+    background: #1d72a4;
+}
+
+
+.about {
+    background: #f5f9fb;
+}
+
+.about-card {
+    background: white;
+
+    padding: 60px;
+
+    border-radius: 25px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.about-card h2 {
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.about-card > p {
+    color: #607d8b;
+    line-height: 1.8;
+}
+
+
+
+footer {
+    padding: 40px 10%;
+
+    background: #001b36;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+footer p {
+    color: #91a8b8;
+    font-size: 13px;
+}
+
+
+
+
+@media (max-width: 500px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .description {
+        margin: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .problem-content,
+    .about-card {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
